@@ -84,5 +84,34 @@
 				]
 			}
 		}
+	],
+	"Trajectory2": [
+		{
+			"question_id": 0,
+			"question_type": "RAG",
+			"question": "Was Abraham Lincoln the sixteenth President of the United States?",
+			"ground_truth": "yes"
+		}
+	],
+	"Trajectory3": [
+		{
+			"question_id": 1,
+			"question": "What is the highest eligible free rate for K-12 students in the schools in Alameda County?",
+			"question_type": "TEXT2SQL",
+			"ground_truth": {
+				"ground_truth_sql_query": "SELECT `Free Meal Count (K-12)` / `Enrollment (K-12)` FROM frpm WHERE `County Name` = 'Alameda' ORDER BY (CAST(`Free Meal Count (K-12)` AS REAL) / `Enrollment (K-12)`) DESC LIMIT 1",
+				"ground_truth_sql_context": "[{'table_name': 'frpm', 'columns': [('cdscode', 'varchar'), ('academic year', 'varchar'), ('county code', 'varchar'), ('district code', 'integer'), ('school code', 'varchar'), ('county name', 'varchar'), ('district name', 'varchar'), ('school name', 'varchar'), ('district type', 'varchar'), ('school type', 'varchar'), ('educational option type', 'varchar'), ('nslp provision status', 'varchar'), ('charter school (y/n)', 'double'), ('charter school number', 'varchar'), ('charter funding type', 'varchar'), ('irc', 'double'), ('low grade', 'varchar'), ('high grade', 'varchar'), ('enrollment (k-12)', 'double'), ('free meal count (k-12)', 'double'), ('percent (%) eligible free (k-12)', 'double'), ('frpm count (k-12)', 'double'), ('percent (%) eligible frpm (k-12)', 'double'), ('enrollment (ages 5-17)', 'double'), ('free meal count (ages 5-17)', 'double'), ('percent (%) eligible free (ages 5-17)', 'double'), ('frpm count (ages 5-17)', 'double'), ('percent (%) eligible frpm (ages 5-17)', 'double'), ('2013-14 calpads fall 1 certification status', 'integer')]}, {'table_name': 'satscores', 'columns': [('cds', 'varchar'), ('rtype', 'varchar'), ('sname', 'varchar'), ('dname', 'varchar'), ('cname', 'varchar'), ('enroll12', 'integer'), ('numtsttakr', 'integer'), ('avgscrread', 'double'), ('avgscrmath', 'double'), ('avgscrwrite', 'double'), ('numge1500', 'double')]}, {'table_name': 'schools', 'columns': [('cdscode', 'varchar'), ('ncesdist', 'varchar'), ('ncesschool', 'varchar'), ('statustype', 'varchar'), ('county', 'varchar'), ('district', 'varchar'), ('school', 'varchar'), ('street', 'varchar'), ('streetabr', 'varchar'), ('city', 'varchar'), ('zip', 'varchar'), ('state', 'varchar'), ('mailstreet', 'varchar'), ('mailstrabr', 'varchar'), ('mailcity', 'varchar'), ('mailzip', 'varchar'), ('mailstate', 'varchar'), ('phone', 'varchar'), ('ext', 'varchar'), ('website', 'varchar'), ('opendate', 'varchar'), ('closeddate', 'varchar'), ('charter', 'double'), ('charternum', 'varchar'), ('fundingtype', 'varchar'), ('doc', 'varchar'), ('doctype', 'varchar'), ('soc', 'varchar'), ('soctype', 'varchar'), ('edopscode', 'varchar'), ('edopsname', 'varchar'), ('eilcode', 'varchar'), ('eilname', 'varchar'), ('gsoffered', 'varchar'), ('gsserved', 'varchar'), ('virtual', 'varchar'), ('magnet', 'double'), ('latitude', 'double'), ('longitude', 'double'), ('admfname1', 'varchar'), ('admlname1', 'varchar'), ('admemail1', 'varchar'), ('admfname2', 'varchar'), ('admlname2', 'varchar'), ('admemail2', 'varchar'), ('admfname3', 'varchar'), ('admlname3', 'varchar'), ('admemail3', 'varchar'), ('lastupdate', 'varchar')]}]",
+				"ground_truth_query_result": "1.0",
+				"ground_truth_answer": "The highest eligible free rate for K-12 students in schools in Alameda County is 1.0."
+			}
+		}
+	],
+	"Trajectory4": [
+		{
+			"question_id": 2,
+			"question_type": "CUSTOM",
+			"question": "Generate a bar chart of the top 5 gene biomarkers based on their p value and include their names in the x axis.",
+			"ground_truth": ""
+		}
 	]
 }
