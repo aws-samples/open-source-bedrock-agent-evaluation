@@ -4,3 +4,5 @@ venv/
 *.cfg
 *.env
 hidden/
+
+.venv/
