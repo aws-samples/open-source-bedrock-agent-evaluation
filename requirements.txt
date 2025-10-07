@@ -35,7 +35,7 @@ langchain-aws==0.2.7
 langchain-community==0.3.7
 langchain-core==0.3.18
 langchain-openai==0.2.8
-langchain-text-splitters==0.3.2
+langchain-text-splitters==1.0.0a1
 langfuse==2.54.1
 langsmith==0.1.143
 marshmallow==3.23.1
