@@ -38,7 +38,7 @@ langchain-openai==0.2.8
 langchain-text-splitters==0.3.2
 langfuse==2.54.1
 langsmith==0.1.143
-marshmallow==3.23.1
+marshmallow==3.26.2
 multidict==6.1.0
 multiprocess==0.70.16
 mypy-extensions==1.0.0
