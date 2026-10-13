@@ -1,6 +1,6 @@
 # Open Source Bedrock Agent Evaluation
 
-Open Source Bedrock Agent Evaluation is an evalauation framework for Amazon Bedrock agent tool-use and chain-of-thought reasoning with observability dashboards in LangFuse. 
+Open Source Bedrock Agent Evaluation is an evaluation framework for Amazon Bedrock agent tool-use and chain-of-thought reasoning with observability dashboards in LangFuse. 
 
 ## Existing AWS assets
 https://github.com/awslabs/agent-evaluation implements an LLM agent (evaluator) that will orchestrate conversations with your own agent (target) and evaluate the responses during the conversation.
